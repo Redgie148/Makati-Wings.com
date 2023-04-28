@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Reservations | Makati Wings</title>
+	<link rel="stylesheet" type="text/css" href="links/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/fcffda7ec5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="links/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="links/lightbox.css">
+	  
+	  <script>
+  $(document).ready(function(){
+    $('.dropdown-hover').parent().hover(function(){
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+    }, function(){
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+    });
+
+    $('.nav-link.dropdown-toggle').click(function(){
+      window.location.href = $(this).attr('href');
+    });
+  });
+</script>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Menu.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+			<ul class="dropdown-menu dropdown-hover" aria-labelledby="navbarDropdownMenuLink">
+<li><a class="dropdown-item" href="Wings.html">Wings</a></li>
+            <li><a class="dropdown-item" href="Breakfast.html">Breakfast</a></li>
+            <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
+			<li><a class="dropdown-item" href="Beverages.html">Beverages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Contacts.html"q id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact Us
+          </a>
+			<ul class="dropdown-menu dropdown-hover" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="Reservations.html">Reservation</a></li>
+            <li><a class="dropdown-item" href="Feedback.html">Feedback</a></li>
+            <li><a class="dropdown-item" href="https://food.grab.com/ph/en/restaurant/makati-wings-makati-delivery/2-C3JGJKVFAT3DGX" target="_blank">Delivery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <br><br>
+    <div class="boxcon">
+      <section>
+        <div class="jumbotron jumbotron-fluid bg-body-secondary">
+          <div class="container">
+            <h1 class="display-4" style="color: black;">Make a Reservation</h1>
+            <p class="lead" style="color: #333333;">Please fill in the details below to make a reservation</p>
+          </div>
+        </div>
+        <div class="container">
+          <form method="post" action="thank-you.html">
+			<div class="mb-3">
+              <label for="inputName" class="form-label" style="color: black;">Name</label>
+              <input type="text" class="form-control" id="inputName" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputGroupSize" class="form-label" style="color: black;">Group Size</label>
+              <input type="number" class="form-control" id="inputGroupSize" min="1" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputTime" class="form-label" style="color: black;">Time</label>
+              <input type="time" class="form-control" id="inputTime" min="11:30" max="21:30" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label" style="color: black;">Email</label>
+              <input type="email" class="form-control" id="inputEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputContactNumber" class="form-label" style="color: black;">Contact Number</label>
+              <input type="tel" class="form-control" id="inputContactNumber" required>
+            </div>
+			<div class="form-group">
+				<label for="notes" class="form-label" style="color: black;" >Remarks</label>
+				<textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+			</div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+		  
+        </div>
+      </section>
+    </div>
+    <script src="links/bootstrap.bundle.min.js"></script>
+    <script src="links/main.js"></script>
+  <footer class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-left">
+        <h5>Contact Us</h5>
+        <p>Email: <a href="mailto:makatiwings@gmail.com">makatiwings@gmail.com</a></p>
+      </div>
+		<div class="col-sm-4 text-left">
+		<h5>We accept:</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="d-inline-block ml-3"><img src="images/card.png" alt="Card" width="100px"></li>
+          <li class="d-inline-block ml-3"><img src="images/gcash.png" alt="GCash" width="100px"></li>
+        </ul>
+		</div>
+      <div class="col-sm-4 text-left">
+        <h5>For news and updates, follow us:</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="d-inline-block"><a href="https://web.facebook.com/makatiwings" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="text-center">&copy; 2023 Makati Wings. All rights reserved.</p>
+</footer>
+  </body>
+  	    <script type="text/javascript" src="links\bootstrap.bundle.min.js"></script>
+</html>

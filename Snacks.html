@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snacks | Makati Wings</title>
+	<link rel="stylesheet" type="text/css" href="links/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/fcffda7ec5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="links/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="links/lightbox.css">
+
+	  
+<script>
+  $(document).ready(function(){
+    $('.dropdown-hover').parent().hover(function(){
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+    }, function(){
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+    });
+
+    $('.nav-link.dropdown-toggle').click(function(){
+      window.location.href = $(this).attr('href');
+    });
+  });
+</script>
+</head>
+	<!--don't touch-->
+  <body>
+
+<!--don't touch-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Menu.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+			<ul class="dropdown-menu dropdown-hover" aria-labelledby="navbarDropdownMenuLink">
+			<li><a class="dropdown-item" href="Wings.html">Wings</a></li>
+            <li><a class="dropdown-item" href="Breakfast.html">Breakfast</a></li>
+            <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
+			<li><a class="dropdown-item" href="Beverages.html">Beverages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Contacts.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact Us
+          </a>
+			<ul class="dropdown-menu dropdown-hover" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="Reservations.html">Reservation</a></li>
+            <li><a class="dropdown-item" href="Feedback.html">Feedback</a></li>
+            <li><a class="dropdown-item" href="https://food.grab.com/ph/en/restaurant/makati-wings-makati-delivery/2-C3JGJKVFAT3DGX" target="_blank">Delivery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br>
+
+<style>
+table {
+  width:90%;
+  margin: auto; /* added this line to center the table */
+  text-align: center;
+  font-family: Bebas Neue;
+  background-color:#FFB64A;
+  border-collapse: collapse;
+}
+
+td {
+  border: 6px solid #FF7A0F;
+  padding: 10px; 
+  margin: 3px;
+	font-size:20px;
+  font-weight: normal; 
+  text-align: center;
+	background-color: #FFB67B;
+		text-shadow: 0px 0px 0.5px #000000;
+
+}
+th{
+		background-color: #FF8B2F;
+		border: 6px solid #FF7A0F;
+		font-size: 26px;
+		font-weight: bold;
+	text-shadow: 1px 0px 3px #000000;
+	}
+</style>
+	<div class="boxsubmen">
+			<div class="jumbotron jumbotron-fluid text-center">
+			<h1 class="text-center"> Snacks Menu</h1>
+				<hr class="my-4">
+			<article>
+			<p>Our snacks menu offers a range of delicious and satisfying options, perfect for any craving. From burgers and fries to jalapeno poppers and crispy nachos, we have something to satisfy everyone's taste buds. And don't forget to try our kimchi and wing dips for a unique twist on your favorite snacks.</p>
+			</article>
+			</div>
+	</div>
+	 <div class="menu">
+		 
+
+<table>
+  <thead>
+    <tr>
+      <th>Snacks</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jalapeño</td>
+      <td>PHP 110</td>
+    </tr>
+    <tr>
+      <td>Cheeseburger</td>
+      <td>PHP 199</td>
+    </tr>
+    <tr>
+      <td>Double Patty</td>
+      <td>PHP 285</td>
+    </tr>
+    <tr>
+      <td>Aloha Cheeseburger</td>
+      <td>PHP 235</td>
+    </tr>
+    <tr>
+      <td>Flavored Fries</td>
+      <td>PHP 95</td>
+    </tr>
+    <tr>
+      <td>Nachos</td>
+      <td>PHP 199</td>
+    </tr>
+    <tr>
+      <td>Fresh Kimchi</td>
+      <td>PHP 90</td>
+    </tr>
+    <tr>
+      <td>Wings Dip</td>
+      <td>PHP 45</td>
+    </tr>
+    <tr>
+      <td>Lava A La Mode</td>
+      <td>PHP 175</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+</div>
+<footer class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-left">
+        <h5>Contact Us</h5>
+        <p>Email: <a href="mailto:makatiwings@gmail.com">makatiwings@gmail.com</a></p>
+      </div>
+		<div class="col-sm-4 text-left">
+		<h5>We accept:</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="d-inline-block ml-3"><img src="images/card.png" alt="Card" width="100px"></li>
+          <li class="d-inline-block ml-3"><img src="images/gcash.png" alt="GCash" width="100px"></li>
+        </ul>
+		</div>
+      <div class="col-sm-4 text-left">
+        <h5>For news and updates, follow us:</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="d-inline-block"><a href="https://web.facebook.com/makatiwings" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="text-center">&copy; 2023 Makati Wings. All rights reserved.</p>
+</footer>
+  <!--don't touch-->
+    <script type="text/javascript" src="links\bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="links/lightbox-plus-jquery.js"></script>
+</body>
+</html>
